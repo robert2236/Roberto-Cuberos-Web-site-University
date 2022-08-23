@@ -1,0 +1,148 @@
+:root {
+  --Dark: #000;
+  --White: #ffffff;
+  --Cyan: #00dae1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--Dark);
+  font-family: "Cinzel", serif;
+  color: #fff;
+}
+
+.head-contac {
+  color: var(--Cyan);
+  display: block;
+  font-size: 1.5rem;
+}
+
+.head-log a {
+  color: var(--Cyan);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+/* -----------------------------------------------------------------Lenguague ---------------------------------------------------------------- */
+.lenguage {
+  background: black;
+  text-align: end;
+}
+
+.en {
+  color: white;
+}
+
+.esp {
+  color: #00a1ff;
+}
+
+.check {
+  position: relative;
+  width: 50px;
+}
+
+.check::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: white;
+  border-radius: 25px;
+}
+
+.check::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.check:checked::after {
+  left: 25px;
+  border: 2px solid #00a1ff;
+}
+
+.check:checked::before {
+  background: #00a1ff;
+}
+
+.btn {
+  width: 8rem;
+  border-radius: 5rem;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------Sections*/
+
+.info-univ {
+  margin: 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+
+  align-content: center;
+  gap: 2rem;
+}
+
+.welcome {
+  width: 80rem;
+}
+
+.upcoming {
+  width: 30rem;
+  background-color: #00a1ff;
+  border-radius: 2rem;
+  margin: 1rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.estudents {
+  width: 70rem;
+  margin: 2rem;
+  height: 30rem;
+}
+
+.apply-flex {
+  margin: 10rem;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-content: center;
+  gap: 2rem;
+}
+
+.apply1 .apply2 {
+  background-color: #00a1ff;
+}
+
+.flex-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  gap: 15rem;
+  margin: 2rem;
+}
+
+.flex-footer img {
+  cursor: pointer;
+}
